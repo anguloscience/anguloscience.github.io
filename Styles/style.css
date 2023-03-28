@@ -1,0 +1,312 @@
+/* ----------------------------------
+ *         Name: style.css
+ *         Version: 1.0.0
+ *         @format: Prettier
+ *         Color palette: https://coolors.co/edbe00-bead74-7e7e7e-b6b0c2-90839e-69557a-574666-4e3e5c-473854-3f314b
+ * ----------------------------------
+ * 
+ *         Table of Contents
+ *         
+ *         #Reset
+ *         #Global styles
+ *         #Header styles
+ *         #Typography
+ *         #Nav styles
+ *         #Home Section styles
+ *         #Media queries
+ * ----------------------------------
+ */
+
+@import url(https://fonts.googleapis.com/css2?family=Belleza&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap);
+
+/* 
+==============================================================
+   #Reset
+==============================================================
+*/
+* {
+   margin: 0;
+   padding: 0;
+   font-size: 100%;
+   box-sizing: border-box;
+}
+header,
+nav,
+main,
+section,
+article,
+footer {
+   display: block;
+}
+ul {
+   list-style: none;
+}
+img {
+   width: 40%;
+}
+
+/*
+==============================================================
+   #Global styles
+==============================================================
+*/
+body {
+   background-color: #4e3e5c;
+   font-family: "Belleza", sans-serif;
+   text-align: center;
+}
+video {
+   display: flex;
+   margin: 0;
+}
+a {
+   display: inline-block;
+   text-decoration: none;
+   color: #edbe00;
+   transition: color 500ms ease-in-out;
+}
+a:hover {
+   color: #bbb2c2;
+}
+
+/*
+==============================================================
+   #Header styles
+==============================================================
+*/
+header {
+   background: url(Images/back.png);
+   background-size: cover;
+   margin: 0;
+   margin-left: 14rem;
+   padding: 0.25rem 0;
+}
+header p {
+   font: 400 1.25rem "Tenor Sans", sans-serif;
+   color: #b6b0c2;
+   text-align: right;
+   margin-right: 3rem;
+}
+footer {
+   align-items: center;
+   margin-top: 0;
+   padding-top: 0;
+}
+footer p {
+   font-size: 0.75rem;
+   display: inline-block;
+   justify-content: center;
+   padding: 1rem;
+   margin-left: 14rem;
+}
+
+/* 
+=============================================================
+   #Typography
+=============================================================
+*/
+h1 {
+   font: 600 2rem "Tenor Sans", sans-serif;
+   color: #bbb2c2;
+   padding: 0.25rem;
+   text-align: right;
+}
+h2 {
+   font: 400 1.6rem "tenor sans", sans-serif;
+   text-transform: uppercase;
+   color:  #bbb2c2;
+}
+h3 {
+   color: #DCB82C;
+   font-size: 1.2rem;
+   text-transform: uppercase;
+   font-weight: 300;
+}
+h4{
+   color:#DCB82C;
+   font-size: 1rem;
+   font-weight: 350;
+}
+p {
+   color: #bbb2c2;
+   font-size: 1rem;
+   margin: 1rem;
+}
+
+/* 
+=============================================================
+   #Nav styles
+=============================================================
+*/
+.menu {
+   display: flex;
+   position: fixed;
+   z-index: 100;
+   color: #f8f8f8;
+   background-color: #3f314b;
+   width: 14rem !important;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   height: 100%;
+}
+.nav-list a {
+   display: block;
+   padding: 0.75rem 0;
+   text-align: right;
+   outline: none;
+   margin: 0 1.5rem;
+   font: 400 1rem "Tenor-sans", sans-serif;
+   color: #bbb2c2;
+   text-transform: uppercase;
+   transition: color 400ms ease-in-out;
+}
+.top-nav {
+   height: 35%;
+   margin: 0;
+   align-items: center;
+}
+.top-nav img {
+   width: 60%;
+   padding: 0.5rem 0;
+   margin-top: 0.5rem;
+   transition: 0.8s all ease-in-out;
+   transform-origin: 50% 50%;
+}
+.top-nav img:hover {
+   scale: 1.45;
+}
+.top-nav h1:hover {
+   color: #f8f8f8;
+}
+.bottom-nav {
+   height: 65%;
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   padding: 0.5rem;
+}
+.bottom-nav a {
+   text-align: left;
+}
+.bottom-nav a:hover {
+   color: #edbe00;
+}
+
+/* ==============================================================
+   #Home Section styles
+=============================================================
+*/
+
+/* Home page */
+section h2 {
+   margin-bottom: 1rem;
+   padding-left: 1rem;
+   padding-right: 2rem;
+   text-overflow: ellipsis;
+}
+.gif {
+   display: contents;
+}
+.gif video {
+   margin-left: 16rem;
+   margin-right: 1rem;
+}
+.section-flex {
+   display: flex;
+   float: left;
+   align-items: center;
+}
+.section-flex img {
+   width: 100%;
+   padding: 1rem;
+}
+.left-flex-intro {
+   display: contents;
+   width: 40%;
+}
+.right-flex-intro {
+   width: 60%;
+   text-align: right;
+   margin-right: 1rem;
+}
+.intro p {
+   padding-right: 1rem;
+}
+.intro a {
+   display: block;
+   text-align: center;
+   margin-left: 6rem;
+   padding: 0.5rem;
+}
+.left-flex {
+   width: 60%;
+   margin-left: 16rem;
+   margin-right: 0.75rem;
+   text-align: left;
+}
+.right-flex {
+   width: 40%;
+   margin-right: 1.5rem;
+}
+.right-flex img {
+   border-radius: 10%;
+   margin: 0;
+}
+.ctu-button {
+   font-size: 1.5rem;
+   color: #edbe00;
+   padding: 0.5rem 2rem;
+   border-radius: 1rem;
+   margin-left: 2rem;
+   margin-right: 2rem;
+   transition: 500ms background-color ease-in-out;
+}
+.ctu-button:hover {
+   background-color: #3f314b;
+}
+.publications {
+   margin-left: 16rem;
+   margin-right: 2rem;
+}
+.publications h2 {
+   display: block;
+   text-align: center;
+}
+.img-zoom {
+   overflow: hidden;
+}
+.img-zoom a {
+   margin: 0.5rem;
+}
+.img-zoom .art1 {
+   width: 90%;
+   padding: 0;
+   transform-origin: 0% 0%;
+   transition: 1s scale ease-in-out;
+}
+.img-zoom .art2 {
+   width: 89%;
+   padding: 0;
+   transform-origin: 50% 0%;
+   transition: 1s scale ease-in-out;
+}
+.img-zoom .art3 {
+   width: 91.5%;
+   padding: 0;
+   transform-origin: 100% 0%;
+   transition: 1s scale ease-in-out;
+}
+.img-zoom img:hover {
+   display: inline-block;
+   scale: 1.7;
+}
+.more-arts {
+   display: block;
+   text-align: right;
+   margin-top: 0;
+   padding-top: 0;
+}
+
+

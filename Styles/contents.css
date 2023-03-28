@@ -1,0 +1,125 @@
+/* ----------------------------------
+ *         Name: contents.css
+ *         Version: 1.0.0
+ *         @format: Prettier
+ * ----------------------------------
+ * 
+ *         Table of Contents
+ *         
+ *         #Career
+ *         #Publications
+ *         #Education
+ *         #Skills
+ *         #About
+ * ----------------------------------
+==============================================================
+ #Career
+==============================================================
+*/
+ header h1 {
+    font: 500 2rem "Tenor Sans", sans-serif;
+    color:#edbe00;
+    text-align: center;
+    text-transform: uppercase;
+}
+ main{
+    margin:1rem 1rem 1rem 14rem;
+ }
+ .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+/*
+==============================================================
+ #Publications
+==============================================================
+*/
+.articles{
+  width: 100%;
+}
+.articles h2{
+  font-size: 1.3rem;
+  margin: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+.articles h2:hover {
+  color: #c6c02c;
+}
+
+.articles h2, h3, h4{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.articles p{
+  text-align: left;  
+}
+.articles p a{
+  color: #bbb2c2;  
+  transition: color 0.4s ease-in-out;
+}
+.articles p a:hover {
+  color: #edbe00;
+}
+.aside-art{
+  display: block;
+  width: 30%;
+  float: left;
+  overflow:visible;  
+  padding: 1rem 0;
+}
+.aside-art img{
+  z-index: 1;
+  width: 60%;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  transform-origin: 0% 0%;
+  transition: 1s scale ease-in-out;
+}
+.aside-art img:hover {  
+  scale: 1.7;
+}
+.articles .keywords {
+  text-align: center;
+}
+
+/*
+==============================================================
+ #Education
+==============================================================
+*/
+
+/*
+==============================================================
+ #Skills
+==============================================================
+*/
+
+
+/*
+==============================================================
+ #About
+==============================================================
+*/
+  

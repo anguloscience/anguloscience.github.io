@@ -1,0 +1,199 @@
+/*----------------------------------
+
+        Name: style.css
+        Version: 1.0.0
+        @format: Prettier
+
+----------------------------------
+
+        Table of Contents
+        
+        #Reset
+        #Global styles
+        #Header styles
+        #Nav styles
+        #Content Area 
+        #Introduction Screen
+        #About Screen
+        #Skills Screen
+        #Progressbar
+        #PieChart
+        #Experience Screen
+        #Education Screen
+        #Contact Screen
+        #Last Screen
+
+*/
+
+/* @format */
+
+@import url(https://fonts.googleapis.com/css2?family=Belleza&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap);
+
+/* ==========================================================================
+   #Reset
+   ========================================================================== */
+
+* {
+   margin: 0;
+   padding: 0;
+   font-size: 100%;
+   box-sizing: border-box;
+}
+header,
+nav,
+main,
+section,
+article,
+footer {
+   display: block;
+}
+ul {
+   list-style: none;
+}
+img {
+   width: 40%;
+}
+
+/* ==========================================================================
+   #Global styles
+   ========================================================================== */
+
+body {
+   color: #bbb2c2;
+   background-color: #4e3e5c;
+   font-family: "Belleza", sans-serif;
+   text-align: center;
+}
+video {
+   margin-top: 0.25rem;
+   border: 0px;
+   padding: 0px;
+   border-radius: 5%;
+}
+a {
+   display: inline-block;
+   text-decoration: none;
+   color: #bbb2c2  ;
+   transition: color 250ms ease-in-out;
+}
+a:hover {
+   color: #edbe00;
+}
+
+/* ==========================================================================
+   #Header styles
+   ========================================================================== */
+   header {
+   color: #b29cbf;
+   background: url(back.png) center;
+   background-size: cover;
+   text-align: center;
+   padding: 0.25rem 0;
+}
+h1 {
+   font: 1.1rem "Tenor Sans", sans-serif;
+   color: #bbb2c2;
+   font-size: 2.5rem;
+   padding: 1rem;
+   border: 0;
+   margin: 0;
+}
+h2 {
+   font-size: 2rem;
+   color: #9fc157;
+}
+h3 {
+   color: #c6c02c;
+   font-size: 1.5rem;
+}
+
+/* ==========================================================================
+   #Nav
+   ========================================================================== */
+   nav {
+   background-color: #30412e;
+   padding-right: 0.5rem;
+   display: flex;
+}
+.left-nav {
+   width: 30%;
+}
+.right-nav {
+   width: 70%;
+}
+.nav-list {
+   object-position: right;
+   display: flex;
+   justify-content: end;
+}
+.nav-logo {
+   object-position: left;
+   display: block;
+   border-radius: 1rem;
+   width: 7rem;
+   border: 0;
+   padding-top: 0.25rem;
+   transition: color 450ms ease-in-out, background-color 650ms ease-in-out;
+}
+.nav-link:hover,
+.nav-logo:hover {
+   display: block;
+   color: #30412e;
+   background-color: #97b752;
+   font-weight: 900;
+}
+.nav-link {
+   color: #edbe00;
+   font-size: 1.25rem;
+   padding: 0.5rem 0.5rem;
+   padding-left: 1.5rem;
+   padding-right: 1.5rem;
+   border-radius: 1rem;
+   margin: 0 0.25rem;
+   transition: color 450ms ease-in-out, background-color 650ms ease-in-out;
+}
+
+/* -------------- Section Styles -------------- */
+section {
+   padding: 1rem 10%;
+   margin: 2rem 10%;
+}
+section h2 {
+   margin-bottom: 1rem;
+}
+.section-flex {
+   display: flex;
+   align-items: center;
+}
+.left-flex {
+   width: 30%;
+   margin: 0 1rem;
+}
+.right-flex {
+   width: 70%;
+   margin: 0 1rem;
+}
+.section-flex img {
+   width: 100%;
+}
+
+article {
+   margin: 0.5rem 0;
+}
+
+img {
+   border-radius: 5%;
+}
+p {
+   color: #e3d8e9;
+   font: 1rem "Tenor Sans", sans-serif;
+}
+.ctu-button {
+   font-size: 1.2rem;
+   color: #edbe00;
+   padding: 0.5rem 2rem;
+   border: 3px solid #edbe00;
+   border-radius: 2rem;
+   margin-block: 1rem auto;
+}

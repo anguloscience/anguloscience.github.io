@@ -1,0 +1,306 @@
+/*  @format: Prettier
+==============================================================
+#Responsive styles
+==============================================================
+*/
+.hamburger {
+   display: none;
+}
+.bar {
+   display: block;
+   width: 2rem;
+   height: 0.2rem;
+   margin: 0.3rem auto;
+   -webkit-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   background-color: #edbe00;
+}
+.nav-mobile {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0.5rem 1.5rem;
+}
+.head-block {
+   display: inline-block;
+}
+
+/* 
+==============================================================
+#Media queries
+==============================================================
+*/
+
+@media screen and (max-width: 1024px) {
+   /* GLOBAL STYLES */
+   header {
+      background: url(Images/back.png);
+      z-index: 1;
+      background-size: cover;
+      margin: 0;
+      width: 100%;
+   }
+   .nav-mobile {
+      display: flex;
+      flex-direction: row;
+      z-index: 1;
+      margin-left: 12rem;
+   }
+   .menu {
+      width: 12rem !important;
+      background-color: #3f314b;
+   }
+   .menu nav {
+      top: 1.2rem;
+   }
+   .menu nav a {
+      background-color: #3f314b;
+      padding: 0.75rem 0;
+      font-size: 1rem;
+   }
+   .contents {
+      margin-left: 12rem;
+   }
+
+   /* HOME PAGE */
+   .left-flex,
+   .gif video,
+   .publications {
+      margin-left: 13rem;
+   }
+   .right-flex-intro {
+      padding-top: 1rem;
+   }
+   .gif video,
+   .right-flex-intro,
+   .left-flex,
+   .right-flex,
+   .publications {
+      margin-right: 0rem;
+   }
+
+   /* CAREER */
+
+   /* PUBLICATIONS */
+   .articles p {
+      text-align: justify;
+      margin: 0.5rem;
+   }
+   .aside-art {
+      margin-top: 0.5rem;
+      padding: 0.25rem;
+   }
+
+   /* EDUCATION */
+
+   /* SKILLS */
+
+   /* ABOUT */
+}
+
+/* ============================================================== */
+@media screen and (max-width: 768px) {
+   /* GLOBAL STYLES */
+   body {
+      overflow-x: auto;
+      overflow-y: auto;
+   }
+   header h1 {
+      font: 400 2rem "Tenor Sans", sans-serif;
+      color: #edbe00;
+      text-align: center;
+   }
+   h2 {
+      font-size: 1rem;
+   }
+   h3, h4{
+      font-size: 0.8rem;
+   }
+   .contents {
+      margin-left: 1rem;
+   }
+   .menu {
+      background: none;
+      height: 0;
+      right: -100%;
+   }
+   .nav-mobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      z-index: 1;
+      margin: 0;
+   }
+   .logo {
+      margin: 0;
+      padding: 0;
+      width: 0%;
+   }
+   .logo img {
+      display: none;
+      padding: 0;
+   }
+   .nav-list {
+      position: fixed;
+      right: -100%;
+      top: 4.5rem;
+      flex-direction: column;
+      background-color: #3f314b;
+      width: 50%;
+      border-radius: 5%;
+      transition: 0.5s;
+   }
+   .nav-list.active {
+      right: 0;
+   }
+   .nav-list li {
+      margin: 1rem 1rem;
+      font-size: 2rem;
+   }
+   .nav-list li a {
+      text-align: right;
+      font-size: 1.2rem;
+      transition: color 0.4s ease-in-out;
+   }
+   .nav-list li a:hover {
+      color: #edbe00;
+   }
+   .hamburger {
+      background: url(back.png);
+      background-size: cover;
+      display: block;
+      cursor: pointer;
+   }
+   .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+   }
+   .hamburger.active .bar:nth-child(1) {
+      transform: translateY(0.5rem) rotate(45deg);
+   }
+   .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-0.5rem) rotate(-45deg);
+   }
+   footer {
+      display: none;
+   }
+
+   /* HOME PAGE */
+   .right-flex-intro {
+      padding-top: 1rem;
+   }
+   .gif video,
+   .right-flex-intro,
+   .left-flex,
+   .right-flex,
+   .publications {
+      margin: 0.25rem 2rem;
+   }
+
+   /* EDUCATION */
+
+   /* SKILLS */
+
+   /* ABOUT */
+}
+
+/* ============================================================== */
+@media screen and (max-width: 620px) {
+   /* GLOBAL CONTENTS*/
+   h2 {
+      font-size: 1rem;
+   }
+   h3 {
+      font-size: 0.85rem;
+   }
+   p {
+      font-size: 0.75rem;
+   }
+   .menu {
+      background: none;
+      height: 0;
+   }
+   .nav-list {
+      position: fixed;
+      right: -100%;
+      top: 4.5rem;
+      flex-direction: column;
+      background-color: #3f314b;
+      width: 60%;
+      border-radius: 5%;
+      transition: 0.5s;
+   }
+
+   /* HOME PAGE */
+   .head-block {
+      margin: 0;
+   }
+   .ctu-button {
+      font-size: 1rem;
+      margin-left: 0rem;
+      margin-right: 0;
+      padding: 0 0 1rem 0;
+   }
+   .gif video {
+      margin: 0 0 0 0.5rem;
+      width: 35%;
+   }
+   .intro a {
+      display: inline-block;
+      margin-top: 0rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      padding: 0;
+   }
+   .intro p,
+   .intro h2 {
+      padding: 0;
+      margin: 0 0 1rem 0;
+   }
+   .left-flex-intro {
+      width: 30%;
+   }
+   .right-flex-intro {
+      width: 70%;
+   }
+   .left-flex {
+      display: block;
+      width: 100%;
+      margin: 0 0 0 0.5rem;
+   }
+   .right-flex {
+      padding: 0;
+      width: 0;
+      height: 0;
+   }
+   .right-flex img {
+      padding: 0;
+      width: 0;
+   }
+
+   /* CAREER */
+
+   /* PUBLICATIONS */
+   .articles h2 {
+      font-size: 1rem;
+      margin: 0.75rem 0;
+   }
+   .articles h3,
+   h4 {
+      font-size: 0.85rem;
+   }
+   .articles p {
+      text-align: justify;
+      margin: 0.5rem 0;
+   }
+
+   .aside-art img {
+      padding: 0.25rem;
+   }
+
+   /* EDUCATION */
+
+   /* SKILLS */
+
+   /* ABOUT */
+}
