@@ -1,7 +1,13 @@
 # Website
 Personal website with resume 
 
-https://user-images.githubusercontent.com/80077181/228968662-1c256dee-7e62-41f4-b382-012e29bf2f2f.mp4
+
+
+
+
+
+
+https://user-images.githubusercontent.com/80077181/228970880-bcdb439a-380c-4e5e-aeba-1f46ce790cab.mp4
 
 
 ==============================================
