@@ -31,7 +31,6 @@
 #Media queries
 ==============================================================
 */
-
 @media screen and (max-width: 1024px) {
    /* GLOBAL STYLES */
    header {
@@ -62,6 +61,30 @@
    .contents {
       margin-left: 12rem;
    }
+   footer {
+      align-items: center;
+      margin-top: 0;
+      padding-top: 0;
+   }
+   footer p {
+      font-size: 0.75rem;
+      display: inline-block;
+      justify-content: center;
+      padding: 1rem;
+      margin-left: 14rem;
+   }
+   .about-footer {
+      align-items: center;
+      margin-top: 0;
+      padding-top: 0;
+   }
+   .about-footer p {
+      font-size: 0.75rem;
+      display: inline-block;
+      justify-content: center;
+      padding: 1rem;
+      margin-left: 12rem;
+   }
 
    /* HOME PAGE */
    .left-flex,
@@ -82,6 +105,7 @@
 
    /* CAREER */
 
+
    /* PUBLICATIONS */
    .articles p {
       text-align: justify;
@@ -94,9 +118,32 @@
 
    /* EDUCATION */
 
+
    /* SKILLS */
 
+
    /* ABOUT */
+   .profile-section {
+      margin: 2rem 1rem;
+   }
+   .left-flex-about {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      float: left;
+      text-align: left;
+   }
+   /* Contact form */
+   .fcf-body-index {
+      display: block;
+      width: 70%;
+      margin: 1rem;
+      margin-left: 14rem;
+      margin-right: auto;
+   }
+   .fcf-body {
+      margin: 1rem 0;
+   }
 }
 
 /* ============================================================== */
@@ -114,7 +161,8 @@
    h2 {
       font-size: 1rem;
    }
-   h3, h4{
+   h3,
+   h4 {
       font-size: 0.8rem;
    }
    .contents {
@@ -181,8 +229,8 @@
    .hamburger.active .bar:nth-child(3) {
       transform: translateY(-0.5rem) rotate(-45deg);
    }
-   footer {
-      display: none;
+   .about-footer p {
+      margin-left: auto;
    }
 
    /* HOME PAGE */
@@ -196,17 +244,37 @@
    .publications {
       margin: 0.25rem 2rem;
    }
+   .fcf-body-index {
+      margin: 3rem auto 1rem;
+   }
 
    /* EDUCATION */
 
+
    /* SKILLS */
 
+
    /* ABOUT */
+   .left-flex-about {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      float: left;
+      text-align: left;
+   }
+   .info p {
+      margin-left: 1rem;
+   }
+
+   /* Contact form */
+   .fcf-body {
+      margin: 1rem 1rem;
+   }
 }
 
 /* ============================================================== */
-@media screen and (max-width: 620px) {
-   /* GLOBAL CONTENTS*/
+@media screen and (max-width: 622px) {
+   /* === GLOBAL CONTENTS ===*/
    h2 {
       font-size: 1rem;
    }
@@ -214,7 +282,7 @@
       font-size: 0.85rem;
    }
    p {
-      font-size: 0.75rem;
+      font-size: 0.85rem;
    }
    .menu {
       background: none;
@@ -231,7 +299,7 @@
       transition: 0.5s;
    }
 
-   /* HOME PAGE */
+   /* === HOME PAGE === */
    .head-block {
       margin: 0;
    }
@@ -278,29 +346,150 @@
       width: 0;
    }
 
-   /* CAREER */
+   /* === CAREER === */
 
-   /* PUBLICATIONS */
+
+   /* === PUBLICATIONS === */
    .articles h2 {
-      font-size: 1rem;
       margin: 0.75rem 0;
-   }
-   .articles h3,
-   h4 {
-      font-size: 0.85rem;
    }
    .articles p {
       text-align: justify;
       margin: 0.5rem 0;
    }
-
    .aside-art img {
       padding: 0.25rem;
    }
 
-   /* EDUCATION */
+   /* === EDUCATION === */
 
-   /* SKILLS */
 
-   /* ABOUT */
+   /* === SKILLS === */
+
+
+   /* === ABOUT === */
+   .profile-section {
+      margin: 2rem 0rem;
+   }
+
+   /* Info */
+   .section-about {
+      display: flex;
+      flex-direction: row;
+   }
+   .left-flex-about {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      float: left;
+      text-align: left;
+      margin: 1rem;
+   }
+   .info p {
+      display: inline-block;
+      text-align: left;
+      align-items: center;
+      padding: 0.5rem 0;
+      margin: 0.5rem 0;
+   }
+   
+   /* Contact form */
+   .fcf-body {
+      font-size: 0.85rem;
+      text-align: left;
+      width: 75%;
+      padding: 0.5rem;
+      padding-bottom: 0.75px;
+      margin: 0 0 0 0.85rem;
+   }
+   .fcf-btn-lg,
+   .fcf-btn-group-lg > .fcf-btn {
+      font-size: 0.85rem;
+      line-height: 1.5;
+      border-radius: 0.3rem;
+      padding: 0.5rem 0.5rem;
+   }
+   .fcf-body {
+      margin: 1rem auto;
+   }
+   .icons-flex .fa-2x {
+      font-size: 120%;
+   }
+}
+
+/* ============================================================== */
+@media screen and (max-width: 518px) {
+   /* === EDUCATION === */
+   /* Awards */
+   .awards h3 {
+      text-transform: none;
+      text-align: left;
+      margin-bottom: 0.5rem;
+   }
+   .top-awards-flex,
+   .bottom-awards-flex {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      margin-bottom: 0rem;
+      margin: AUTO;
+   }
+
+   /* === ABOUT === */
+   /* Info */
+   .section-about {
+      display: flex;
+      flex-direction: column;
+   }
+   .left-flex-about {
+      display: flexbox;
+      flex-direction: column;
+      width: 55%;
+      text-align: left;
+      margin: 0 auto;
+   }
+   .info p {
+      display: inline-block;
+      text-align: left;
+      align-items: center;
+      padding: 0.5rem;
+      border: none;
+      margin: 0;
+   }
+   .info-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start spa;
+      margin-left: 0.5rem;
+   }
+   .info-links p {
+      margin: 0.5rem 0.75rem 0.5rem 0;
+      padding: 0 0.5rem;
+      border-bottom: none;
+      transition: 0.4s color ease-in-out;
+   }
+   .icons h2 {
+      margin: 1rem;
+   }
+   .icons-flex {
+      font-size: 120%;
+      width: 100%;
+      justify-content: space-evenly;
+   }
+}
+
+/* ============================================================== */
+@media (prefers-reduced-motion: reduce) {
+   /* === ABOUT === Contact form */
+   .fcf-btn {
+      transition: none;
+   }
+}
+
+/* ============================================================== */
+@media screen and (min-height: 901px) {
+   /* === ABOUT === */
+   .about-footer {
+      display: none;
+   }
 }

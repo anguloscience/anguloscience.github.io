@@ -16,92 +16,94 @@
  #Career
 ==============================================================
 */
- header h1 {
-    font: 500 2rem "Tenor Sans", sans-serif;
-    color:#edbe00;
-    text-align: center;
-    text-transform: uppercase;
+header h1 {
+   font: 500 2rem "Tenor Sans", sans-serif;
+   color: #edbe00;
+   text-align: center;
+   text-transform: uppercase;
 }
- main{
-    margin:1rem 1rem 1rem 14rem;
- }
- .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-  }
+main {
+   margin: 1rem 1rem 1rem 14rem;
+}
+.accordion {
+   background-color: #eee;
+   color: #444;
+   cursor: pointer;
+   padding: 18px;
+   width: 100%;
+   text-align: left;
+   border: none;
+   outline: none;
+   transition: 0.4s;
+}
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-    background-color: #ccc;
-  }
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
+.active,
+.accordion:hover {
+   background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+   padding: 0 18px;
+   background-color: white;
+   display: none;
+   overflow: hidden;
+   transition: max-height 0.2s ease-out;
+}
 
 /*
 ==============================================================
  #Publications
 ==============================================================
 */
-.articles{
-  width: 100%;
+.articles {
+   width: 100%;
 }
-.articles h2{
-  font-size: 1.3rem;
-  margin: 1rem;
-  transition: color 0.3s ease-in-out;
+.articles h2 {
+   font-size: 1.3rem;
+   margin: 1rem;
+   transition: color 0.3s ease-in-out;
 }
 .articles h2:hover {
-  color: #c6c02c;
+   color: #c6c02c;
 }
-
-.articles h2, h3, h4{
-  text-align: center;
-  margin-bottom: 1rem;
+.articles h2,
+h3,
+h4 {
+   text-align: center;
+   margin-bottom: 1rem;
 }
-.articles p{
-  text-align: left;  
+.articles p {
+   text-align: left;
 }
-.articles p a{
-  color: #bbb2c2;  
-  transition: color 0.4s ease-in-out;
+.articles p a {
+   color: #bbb2c2;
+   transition: color 0.4s ease-in-out;
 }
 .articles p a:hover {
-  color: #edbe00;
+   color: #edbe00;
 }
-.aside-art{
-  display: block;
-  width: 30%;
-  float: left;
-  overflow:visible;  
-  padding: 1rem 0;
+.aside-art {
+   display: block;
+   width: 30%;
+   float: left;
+   overflow: visible;
+   padding: 1rem 0;
 }
-.aside-art img{
-  z-index: 1;
-  width: 60%;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  transform-origin: 0% 0%;
-  transition: 1s scale ease-in-out;
+.aside-art img {
+   z-index: 1;
+   width: 60%;
+   align-items: center;
+   margin: 0;
+   padding: 0;
+   transform-origin: 0% 0%;
+   transition: 1s scale ease-in-out;
 }
-.aside-art img:hover {  
-  scale: 1.7;
+.aside-art img:hover {
+   scale: 1.7;
 }
 .articles .keywords {
-  text-align: center;
+   text-align: center;
 }
 
 /*
@@ -109,6 +111,40 @@
  #Education
 ==============================================================
 */
+/* Awards and scholarships */
+.awards{
+  margin: 0.5rem;
+}
+.awards h2{
+  display: block;
+  margin-bottom: 1rem;
+}
+.awards h3{
+  text-transform:none;
+  text-align: left;
+  }
+.awards-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+}
+.awards-flex p{
+  margin: 0;
+}
+.top-awards-flex,
+.bottom-awards-flex
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.awards-info{
+  margin:0.5rem ;
+}
+
 
 /*
 ==============================================================
@@ -116,10 +152,96 @@
 ==============================================================
 */
 
-
 /*
 ==============================================================
  #About
 ==============================================================
 */
-  
+.profile-section{
+  text-align: justify;
+  margin: 2rem;
+}
+
+/* Contact info */
+.section-about {
+   display: flex;
+   flex-direction: row;
+   align-items: top;
+   width: 100%;
+}
+.left-flex-about {
+   display: flex;
+   flex-direction: column;
+   width: 40%;
+   text-align: left;
+   margin: 1rem 0.75rem;
+}
+.info p {
+   margin: 1rem 0.25rem;
+}
+.info-links {
+   display: flex;
+   flex-direction: row;
+   text-align: left;
+   justify-content:flex-start;
+   width: auto;
+   align-items: center;
+   padding: 0rem;
+   margin-left: 0.5rem;
+}
+.info-a-link{
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+}
+.info-links p {
+   margin: 0.5rem 0.75rem 0.5rem 0;
+   padding: 0.5rem;
+   transition: 0.4s color ease-in-out;
+}
+.info-links p:hover {
+   color: #edbe00;
+}
+.creator {
+   font-size: 0.55rem;
+   margin: 0.5rem 0.5rem;
+}
+section i {
+   color: #bbb2c2;
+}
+.icons{
+  display: flexbox;
+  width: 100%;
+}
+.icons h2{
+  display: block;
+  margin:1rem;
+  padding: 0;
+  text-align: center;
+}
+.icons-flex{
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-evenly;
+  border-bottom: 1px solid #3f314b;
+  padding-bottom: 1rem;
+}
+
+/* Contact form */
+.fcf-body {
+  font-family: "Belleza", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #bbb2c2;
+  text-align: left;
+  background-color: #4e3e5c;
+  width: 70%;
+  padding: 1rem;
+  padding-bottom: 0.75px;
+  border: 0.05rem solid #bbb2c2;
+  border-radius: 0.25rem;
+  margin: 1rem auto 1rem;
+  margin-left: 2rem;
+}
+

@@ -12,7 +12,11 @@
       <meta name="Home" content="Curriculum vitae. Mónica angulo B., Ph.D." />
       <link rel="stylesheet" href="Styles\style.css" />
       <link rel="stylesheet" href="Styles\responsive.css" />
-
+      <!-- THIS LINK SHOULD NOT BE INSERTED IN THE INDEX
+         <link rel="stylesheet" href="Styles\contents.css"> -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
       <title>Mónica Angulo PhD - CV</title>
    </head>
 
@@ -50,7 +54,8 @@
                   </li>
                   <li>
                      <a class="nav-link" href="publications.html"
-                        >Publications</a>
+                        >Publications</a
+                     >
                   </li>
                   <li>
                      <a class="nav-link" href="education.html">Education</a>
@@ -85,7 +90,7 @@
                      explore my background and skills, and for you to get to
                      know me better.
                   </p>
-                  <a href="about.html" class="ctu-button">Let's talk!</a>
+                  <a href="#fcf-form" class="ctu-button">Let's talk!</a>
                </section>
             </div>
          </div>
@@ -152,12 +157,85 @@
                <a class="ctu-button" href="publications.html">More...</a>
             </div>
          </section>
+
+         <!-- Contact form -->
+         <div class="fcf-body-index">
+            <div id="fcf-form">
+               <h3 class="fcf-h3">Let's talk!</h3>
+
+               <form
+                  id="fcf-form-id"
+                  class="fcf-form-class"
+                  method="post"
+                  action="contact-form-process.php">
+                  <div class="fcf-form-group">
+                     <label for="Name" class="fcf-label">Your full name</label>
+                     <div class="fcf-input-group">
+                        <input
+                           type="text"
+                           id="Name"
+                           name="Name"
+                           class="fcf-form-control"
+                           required />
+                     </div>
+                  </div>
+
+                  <div class="fcf-form-group">
+                     <label for="Email" class="fcf-label"
+                        >Your email address</label
+                     >
+                     <div class="fcf-input-group">
+                        <input
+                           type="email"
+                           id="Email"
+                           name="Email"
+                           class="fcf-form-control"
+                           required />
+                     </div>
+                  </div>
+
+                  <div class="fcf-form-group">
+                     <label for="Message" class="fcf-label">Your message</label>
+                     <div class="fcf-input-group">
+                        <textarea
+                           id="Message"
+                           name="Message"
+                           class="fcf-form-control"
+                           rows="4"
+                           maxlength="3000"
+                           required></textarea>
+                     </div>
+                  </div>
+
+                  <div class="fcf-form-group">
+                     <button
+                        type="submit"
+                        id="fcf-button"
+                        class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">
+                        Send Message
+                     </button>
+                  </div>
+
+                  <div class="fcf-credit" id="fcf-credit">
+                     Simple HTML email form provided by
+                     <a href="https://www.majesticform.com" target="_blank"
+                        >MajesticForm</a
+                     >
+                  </div>
+               </form>
+            </div>
+         </div>
       </main>
       <footer>
          <p>© Mónica Angulo. All rights reserved</p>
       </footer>
+      <!-- <div class="visit-counter">
+      <div id="sfcj4jzjn5dk8bmxqqbgl3wwt2lgeajgjuu"></div><script type="text/javascript" src="https://counter2.optistats.ovh/private/counter.js?c=j4jzjn5dk8bmxqqbgl3wwt2lgeajgjuu&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="hits counter"><img src="https://counter2.optistats.ovh/private/freecounterstat.php?c=j4jzjn5dk8bmxqqbgl3wwt2lgeajgjuu" border="0" title="hits counter" alt="hits counter"></a></noscript> -->
+      <!-- </div> -->
    </body>
    <script src="Scripts/responsive.js"></script>
-    <a href='http://www.freevisitorcounters.com'>at Freevisitorcounters.com</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=43ff501cf533b7fea530f280a0c103f45116d033'></script>
-<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1013103/t/11"></script>
+   <script src="Scripts/contact.js"></script>
+
+   <!-- <a href='http://www.freevisitorcounters.com'>at Freevisitorcounters.com</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=43ff501cf533b7fea530f280a0c103f45116d033'></script>
+  <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1013103/t/11"></script> -->
 </html>

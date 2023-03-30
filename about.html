@@ -13,6 +13,10 @@
       <link rel="stylesheet" href="Styles/style.css" />
       <link rel="stylesheet" href="Styles/contents.css" />
       <link rel="stylesheet" href="Styles/responsive.css" />
+      <link rel="stylesheet" href="contact-form.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
       <title>About MAB, Ph.D.</title>
    </head>
 
@@ -52,7 +56,9 @@
                      <a class="nav-link" href="career.html">Career</a>
                   </li>
                   <li>
-                     <a class="nav-link" href="publications.html">Publications</a>
+                     <a class="nav-link" href="publications.html"
+                        >Publications</a
+                     >
                   </li>
                   <li>
                      <a class="nav-link" href="education.html">Education</a>
@@ -60,17 +66,149 @@
                   <li>
                      <a class="nav-link" href="skills.html">Skills</a>
                   </li>
-                  
                </ul>
             </div>
          </nav>
       </div>
 
       <!-- Page contents -->
-      <main></main>
-      <footer>
+      <main class="contents">
+         <section class="profile-section">
+            <article>
+               <p>
+                  Science lover - Lifelong learner. Fulbright Alumni. PhD. with
+                  a strong background in science & engineering. An organized,
+                  receptive, & versatile professional, bringing strengths in
+                  handling work & solving unique questions with dedication. Able
+                  to effectively self-manage during independent projects &
+                  collaborate as part of a productive team. I am interested in
+                  research projects, data analysis, web development, & computer
+                  programming. Offering competence in quickly learning new
+                  processes & engaging in new challenges with curiosity, energy,
+                  & commitment to drive projects forward.
+               </p>
+            </article>
+         </section>
+
+         <!-- Contact Info -->
+         <section class="section-about">
+            <ul class="left-flex-about">
+               <li class="info"><p>Name: Mónica Lucía Angulo B.</p></li>
+               <li class="info"><p>Email: anguloscience@gmail.com</p></li>
+               <li class="info"><p>Rionegro, Colombia</p></li>
+               <div class="info-links">
+                  <li>
+                     <a
+                        class="info-a-link"
+                        href="https://www.linkedin.com/anguloscience/"
+                        ><i class="fa-brands fa-linkedin"></i>
+                        <p>Resume</p></a
+                     >
+                  </li>
+                  <li>
+                     <a
+                        class="info-a-link"
+                        href="https://github.com/anguloscience"
+                        ><i class="fa-brands fa-github"></i>
+                        <p>Portfolio</p></a
+                     >
+                  </li>
+               </div>
+               <li class="icons">
+                  <h2>Passions</h2>
+                  <div class="icons-flex">
+                     <i class="fa-solid fa-route fa-2x"></i>
+                     <i class="fa-solid fa-graduation-cap fa-2x"></i>
+                     <i class="fa-solid fa-paw fa-2x"></i>
+                     <i class="fa-brands fa-pagelines fa-2x"></i>
+                     <i class="fa-solid fa-book-open-reader fa-2x"></i>
+                  </div>
+               </li>
+               <li>
+                  <p class="creator">
+                     <i>*Owner and creator of this personal website</i>
+                  </p>
+               </li>
+            </ul>
+
+            <!-- Contact form -->
+            <div class="fcf-body">
+               <div id="fcf-form">
+                  <h3 class="fcf-h3">Let's talk!</h3>
+
+                  <form
+                     id="fcf-form-id"
+                     class="fcf-form-class"
+                     method="post"
+                     action="contact-form-process.php">
+                     <div class="fcf-form-group">
+                        <label for="Name" class="fcf-label"
+                           >Your full name</label
+                        >
+                        <div class="fcf-input-group">
+                           <input
+                              type="text"
+                              id="Name"
+                              name="Name"
+                              class="fcf-form-control"
+                              required />
+                        </div>
+                     </div>
+
+                     <div class="fcf-form-group">
+                        <label for="Email" class="fcf-label"
+                           >Your email address</label
+                        >
+                        <div class="fcf-input-group">
+                           <input
+                              type="email"
+                              id="Email"
+                              name="Email"
+                              class="fcf-form-control"
+                              required />
+                        </div>
+                     </div>
+
+                     <div class="fcf-form-group">
+                        <label for="Message" class="fcf-label"
+                           >Your message</label
+                        >
+                        <div class="fcf-input-group">
+                           <textarea
+                              id="Message"
+                              name="Message"
+                              class="fcf-form-control"
+                              rows="4"
+                              maxlength="3000"
+                              required></textarea>
+                        </div>
+                     </div>
+
+                     <div class="fcf-form-group">
+                        <button
+                           type="submit"
+                           id="fcf-button"
+                           class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">
+                           Send Message
+                        </button>
+                     </div>
+
+                     <div class="fcf-credit" id="fcf-credit">
+                        Simple HTML email form provided by
+                        <a href="https://www.majesticform.com" target="_blank"
+                           >MajesticForm</a
+                        >
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="about-footer">
          <p>© Mónica Angulo. All rights reserved</p>
       </footer>
    </body>
+
    <script src="Scripts/responsive.js"></script>
+   <script src="Scripts/contact.js"></script>
 </html>
