@@ -12,11 +12,9 @@
  *         #Skills
  *         #About
  * ----------------------------------
-==============================================================
- #Career
-==============================================================
 */
-header h1 {
+/* GLOBAL */
+ header h1 {
    font: 500 2rem "Tenor Sans", sans-serif;
    color: #edbe00;
    text-align: center;
@@ -25,32 +23,84 @@ header h1 {
 main {
    margin: 1rem 1rem 1rem 14rem;
 }
+
+ /*
+==============================================================
+ #Career
+==============================================================
+*/
 .accordion {
-   background-color: #eee;
-   color: #444;
+   width: 90%;
+   margin: 3rem auto;
+   color: #4e3e5c;
+   background-color: #bbb2c2;
+   padding: 0.5rem 2rem;
+ }
+.accordion h1 {
+   font: "tenor sans", script;
+   color: #3f314b;
+   text-align: center;
+   text-transform: uppercase;
+   vertical-align: center;
+   padding: 0.5rem;
+ }
+ .accordion .label {
+   position: relative;
+   padding: 0;
+   color: #4e3e5c;
    cursor: pointer;
-   padding: 18px;
-   width: 100%;
-   text-align: left;
-   border: none;
-   outline: none;
-   transition: 0.4s;
-}
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.accordion:hover {
-   background-color: #ccc;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-   padding: 0 18px;
-   background-color: white;
-   display: none;
+ }
+ .label h4{
+   font-size: 1.2rem;
+   color: #4e3e5c;
+   font-weight: 700;
+   margin-bottom: 0.5rem;
+ }
+ .accordion .container {
+   position: relative;
+   margin: 0.75rem 0.75rem;
+ }
+ .accordion .content {
+   position: relative;
+   background: #b5abbe;
+   height: 0;
+   text-align: justify;
    overflow: hidden;
-   transition: max-height 0.2s ease-out;
-}
-
+   transition: 0.5s;
+ }
+ .content p{
+   color: #4e3e5c;
+   text-align: left;
+ }
+ .content li{
+   text-align:  left;
+   list-style-type: disc; 
+   margin-left: 1rem;  
+ }
+ hr {
+   margin:0.5rem 0;
+ }
+ /* transitions accordion */
+ .accordion .label::before {
+   content: '+';
+   color: #edbe00;
+   text-shadow:1.5px 1.5px 2px #3f314b;   
+   position: absolute;
+   top: 70%;
+   right: -1.5rem;
+   font-size: 1.75rem;
+   transform: translateY(-90%);
+ } 
+ .accordion .container.active .content {
+   height: auto;
+   background-color: #b5abbe;
+   padding: 0 1rem 1rem 0.5rem;
+ }
+ .accordion .container.active .label::before {
+   content: '-';
+   font-size: 2rem;
+ }
+ 
 /*
 ==============================================================
  #Publications
@@ -178,6 +228,7 @@ h4 {
 }
 .info p {
    margin: 1rem 0.25rem;
+   margin-left: 1rem;
 }
 .info-links {
    display: flex;
@@ -187,7 +238,7 @@ h4 {
    width: auto;
    align-items: center;
    padding: 0rem;
-   margin-left: 0.5rem;
+   margin-left: 1rem;
 }
 .info-a-link{
   display: flex;

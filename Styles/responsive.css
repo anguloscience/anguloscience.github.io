@@ -73,12 +73,12 @@
       padding: 1rem;
       margin-left: 14rem;
    }
-   .about-footer {
+   .contents-footer {
       align-items: center;
       margin-top: 0;
       padding-top: 0;
    }
-   .about-footer p {
+   .contents-footer p {
       font-size: 0.75rem;
       display: inline-block;
       justify-content: center;
@@ -162,8 +162,8 @@
       font-size: 1rem;
    }
    h3,
-   h4 {
-      font-size: 0.8rem;
+   h4, p, li{
+      font-size: 0.85rem;
    }
    .contents {
       margin-left: 1rem;
@@ -229,7 +229,10 @@
    .hamburger.active .bar:nth-child(3) {
       transform: translateY(-0.5rem) rotate(-45deg);
    }
-   .about-footer p {
+   footer p {
+      margin-left: auto;
+   }
+   .contents-footer p {
       margin-left: auto;
    }
 
@@ -419,6 +422,14 @@
 
 /* ============================================================== */
 @media screen and (max-width: 518px) {
+   /* === CAREER === */
+   .label h1{
+      font-size: 1.5rem;
+   }
+   .label h4{
+      font-size: 1rem;
+   }
+
    /* === EDUCATION === */
    /* Awards */
    .awards h3 {
@@ -487,9 +498,9 @@
 }
 
 /* ============================================================== */
-@media screen and (min-height: 901px) {
+@media screen and (min-height: 913px) {
    /* === ABOUT === */
-   .about-footer {
+   .contents-footer {
       display: none;
    }
 }
