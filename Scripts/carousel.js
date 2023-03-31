@@ -1,9 +1,15 @@
+/*
+==============================================================
+ # FORMAL Education
+==============================================================
+*/
+
 // Select all slides
-const slides = document.querySelectorAll(".slide");
+const slides = document.querySelectorAll(".slideFormal");
 
 // loop through slides and set each slides translateX property to index * 100% 
-slides.forEach((slide, indx) => {
-  slide.style.transform = `translateX(${indx * 100}%)`;
+slides.forEach((slideFormal, indx) => {
+  slideFormal.style.transform = `translateX(${indx * 100}%)`;
 });
 
 // current slide counter
@@ -16,8 +22,8 @@ const nextSlide = document.querySelector(".btn-next");
 nextSlide.addEventListener("click", function () {
      curSlide++;
 
-  slides.forEach((slide, indx) => {
-    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+  slides.forEach((slideFormal, indx) => {
+    slideFormal.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
   });
 });
 
@@ -34,8 +40,8 @@ nextSlide.addEventListener("click", function () {
   }
 
 //   move slide by -100%
-  slides.forEach((slide, indx) => {
-    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+  slides.forEach((slideFormal, indx) => {
+    slideFormal.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
   });
 });
 // select prev slide button
@@ -51,7 +57,71 @@ prevSlide.addEventListener("click", function () {
   }
 
   //   move slide by 100%
-  slides.forEach((slide, indx) => {
-    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+  slides.forEach((slideFormal, indx) => {
+    slideFormal.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
   });
 });
+
+/*
+==============================================================
+ # INFORMAL Education
+==============================================================
+*/
+// Select all slides
+const informal = document.querySelectorAll(".slideInformal");
+
+// loop through slides and set each slides translateX property to index * 100% 
+informal.forEach((slideInformal, indx) => {
+  slideInformal.style.transform = `translateX(${indx * 100}%)`;
+});
+
+// current slide counter
+let curInformal = 0;
+
+// select next slide button
+const nextInformal = document.querySelector(".btn-next-informal");
+
+// add event listener and next slide functionality
+nextInformal.addEventListener("click", function () {
+     curInformal++;
+
+  informal.forEach((slideInformal, indx) => {
+    slideInformal.style.transform = `translateX(${100 * (indx - curInformal)}%)`;
+  });
+});
+
+// maximum number of slides
+let maxInformal = informal.length;
+
+// add event listener and navigation functionality
+nextInformal.addEventListener("click", function () {
+  // check if current slide is the last and reset current slide
+  if (curInformal === maxInformal) {
+    curInformal = 0;
+  } else {
+    curInformal+1;
+  }
+
+//   move slide by -100%
+  informal.forEach((slideInformal, indx) => {
+    slideInformal.style.transform = `translateX(${100 * (indx - curInformal)}%)`;
+  });
+});
+// select prev slide button
+const prevInformal = document.querySelector(".btn-prev-informal");
+
+// add event listener and navigation functionality
+prevInformal.addEventListener("click", function () {
+  // check if current slide is the first and reset current slide to last
+  if (curInformal === 0) {
+    curInformal = maxInformal -1;
+  } else {
+    curInformal= curInformal-1 ;
+  }
+
+  //   move slide by 100%
+  informal.forEach((slideInformal, indx) => {
+    slideInformal.style.transform = `translateX(${100 * (indx - curInformal)}%)`;
+  });
+});
+

@@ -14,7 +14,7 @@
  * ----------------------------------
 */
 /* GLOBAL */
- header h1 {
+header h1 {
    font: 500 2rem "Tenor Sans", sans-serif;
    color: #edbe00;
    text-align: center;
@@ -23,8 +23,20 @@
 main {
    margin: 1rem 1rem 1rem 14rem;
 }
+.contents-footer {
+   align-items: center;
+   margin-top: 0;
+   padding-top: 0;
+}
+.contents-footer p {
+   font-size: 0.75rem;
+   display: inline-block;
+   justify-content: center;
+   padding: 1rem;
+   margin-left: 14rem;
+}
 
- /*
+/*
 ==============================================================
  #Career
 ==============================================================
@@ -35,7 +47,7 @@ main {
    color: #4e3e5c;
    background-color: #bbb2c2;
    padding: 0.5rem 2rem;
- }
+}
 .accordion h1 {
    font: "tenor sans", script;
    color: #3f314b;
@@ -43,64 +55,64 @@ main {
    text-transform: uppercase;
    vertical-align: center;
    padding: 0.5rem;
- }
- .accordion .label {
+}
+.accordion .label {
    position: relative;
    padding: 0;
    color: #4e3e5c;
    cursor: pointer;
- }
- .label h4{
+}
+.label h4 {
    font-size: 1.2rem;
    color: #4e3e5c;
    font-weight: 700;
    margin-bottom: 0.5rem;
- }
- .accordion .container {
+}
+.accordion .container {
    position: relative;
    margin: 0.75rem 0.75rem;
- }
- .accordion .content {
+}
+.accordion .content {
    position: relative;
    background: #b5abbe;
    height: 0;
    text-align: justify;
    overflow: hidden;
    transition: 0.5s;
- }
- .content p{
+}
+.content p {
    color: #4e3e5c;
    text-align: left;
- }
- .content li{
-   text-align:  left;
-   list-style-type: disc; 
-   margin-left: 1rem;  
- }
- hr {
-   margin:0.5rem 0;
- }
- /* transitions accordion */
- .accordion .label::before {
-   content: '+';
+}
+.content li {
+   text-align: left;
+   list-style-type: disc;
+   margin-left: 1rem;
+}
+hr {
+   margin: 0.5rem 0;
+}
+/* transitions accordion */
+.accordion .label::before {
+   content: "+";
    color: #edbe00;
-   text-shadow:1.5px 1.5px 2px #3f314b;   
+   text-shadow: 1.5px 1.5px 2px #3f314b;
    position: absolute;
    top: 70%;
    right: -1.5rem;
    font-size: 1.75rem;
    transform: translateY(-90%);
- } 
- .accordion .container.active .content {
+}
+.accordion .container.active .content {
    height: auto;
    background-color: #b5abbe;
    padding: 0 1rem 1rem 0.5rem;
- }
- .accordion .container.active .label::before {
-   content: '-';
+}
+.accordion .container.active .label::before {
+   content: "-";
    font-size: 2rem;
- }
- 
+}
+
 /*
 ==============================================================
  #Publications
@@ -150,6 +162,7 @@ h4 {
    transition: 1s scale ease-in-out;
 }
 .aside-art img:hover {
+   cursor:zoom-in;
    scale: 1.7;
 }
 .articles .keywords {
@@ -161,88 +174,125 @@ h4 {
  #Education
 ==============================================================
 */
+.education-flex {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+.education-flex h2 {
+   font-size: 1.25rem;
+   font-weight: 600;
+   padding: 0rem;
+}
+.left-education,
+.right-education {
+   display: flex;
+   flex-direction: column;
+   margin: 0.5rem;
+}
+.bottom-edu-flex {
+   margin: auto;
+}
 .slider {
-   width: 70%;
-   height: 20rem;
+   height: 18rem;
+   width: 18rem;
    position: relative;
-   overflow: hidden;  
+   overflow: hidden;
    border-radius: 0.75rem;
-   margin:auto
- }
-.slide {
+}
+.slideFormal,
+.slideInformal {
    width: 100%;
-   height: 100%;   
+   height: 100%;
    position: absolute;
-   transition: all 2s;
- }
- .slide img {
+   transition: all 1s;
+   
+}
+.slideFormal img,
+.slideInformal img {
    height: 100%;
    width: auto;
-   object-fit:fill;
+   object-fit: fill;
    align-items: center;
- }
- .formal-btn {
+}
+.slideInformal img {
+   cursor: zoom-in;
+   transform-origin: 35% 65%; 
+   transition: 1s scale ease-in-out;
+} 
+.slideInformal img:hover{
+   scale:1.5;
+}
+.formal-btn {
    position: absolute;
    width: 1.4rem;
-   height: 1.4rem;   
+   height: 1.4rem;
    border: none;
    border-radius: 50%;
    cursor: pointer;
    background-color: #3f314b;
    text-size-adjust: 0.5rem;
- }
- .formal-btn:active {
+}
+.formal-btn:active {
    transform: scale(1.1);
- }
- .btn-prev {
+}
+.btn-prev,
+.btn-prev-informal {
    padding-right: 0.1rem;
-   bottom: 50%;
-   left: 2%;
- } 
- .btn-next { 
-   padding-left: 0.1rem;   
-   bottom: 50%;
-   right: 2%;
- }
- .btn-prev img{
-   transform:rotate(180deg);
- }
- 
+   bottom: 1%;
+   left: 1%;
+}
+.btn-next,
+.btn-next-informal {
+   padding-left: 0.1rem;
+   bottom: 1%;
+   right: 1%;
+   
+}
+.btn-prev img,
+.btn-prev-informal img {
+   transform: rotate(180deg);
+}
 
 /* Awards and scholarships */
-.awards{
-  margin: 0.5rem;
+.awards {
+   margin: 0.5rem;
 }
-.awards h2{
-  display: block;
-  margin-bottom: 1rem;
+.awards h2 {
+   display: block;
+   margin: 3rem 0 1rem 0;
 }
-.awards h3{
-  text-transform:none;
-  text-align: left;
-  }
-.awards-flex{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  text-align: left;
+.awards h3 {
+   text-transform: none;
+   text-align: center;
+   margin-bottom: 0;
 }
-.awards-flex p{
-  margin: 0;
+.awards-flex {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   text-align: left;
+}
+.awards-flex p {
+   margin: 0;
 }
 .top-awards-flex,
-.bottom-awards-flex
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  width: 100%;
-  margin-bottom: 1rem;
+.bottom-awards-flex {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   width: 100%;
+   margin-bottom: 1rem;
 }
-.awards-info{
-  margin:0.5rem ;
+.awards-info {
+   padding: 0.5rem;
+   margin: 0.5rem;
 }
-
+.awards-info hr {
+   opacity: 0.33;
+   background: solid #edbe00;
+   border: 0.5px solid #edbe00;
+}
 
 /*
 ==============================================================
@@ -255,9 +305,9 @@ h4 {
  #About
 ==============================================================
 */
-.profile-section{
-  text-align: justify;
-  margin: 2rem;
+.profile-section {
+   text-align: justify;
+   margin: 2rem;
 }
 
 /* Contact info */
@@ -274,6 +324,12 @@ h4 {
    text-align: left;
    margin: 1rem 0.75rem;
 }
+.left-flex-about hr {
+   border-color: #b5abbe;
+   opacity: 0.3;
+   width: auto;
+   margin: 0.5rem;
+}
 .info p {
    margin: 1rem 0.25rem;
    margin-left: 1rem;
@@ -282,16 +338,16 @@ h4 {
    display: flex;
    flex-direction: row;
    text-align: left;
-   justify-content:flex-start;
+   justify-content: flex-start;
    width: auto;
    align-items: center;
    padding: 0rem;
    margin-left: 1rem;
 }
-.info-a-link{
-  display: flex;
-  flex-direction: row !important;
-  align-items: center;
+.info-a-link {
+   display: flex;
+   flex-direction: row !important;
+   align-items: center;
 }
 .info-links p {
    margin: 0.5rem 0.75rem 0.5rem 0;
@@ -308,39 +364,38 @@ h4 {
 section i {
    color: #bbb2c2;
 }
-.icons{
-  display: flexbox;
-  width: 100%;
+.icons {
+   display: flexbox;
+   width: 100%;
 }
-.icons h2{
-  display: block;
-  margin:1rem;
-  padding: 0;
-  text-align: center;
+.icons h2 {
+   display: block;
+   margin: 1rem;
+   padding: 0;
+   text-align: center;
 }
-.icons-flex{
-  display: flex;
-  flex-direction: row;  
-  justify-content: space-evenly;
-  border-bottom: 1px solid #3f314b;
-  padding-bottom: 1rem;
+.icons-flex {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   border-bottom: 1px solid #3f314b;
+   padding-bottom: 1rem;
 }
 
 /* Contact form */
 .fcf-body {
-  font-family: "Belleza", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #bbb2c2;
-  text-align: left;
-  background-color: #4e3e5c;
-  width: 70%;
-  padding: 1rem;
-  padding-bottom: 0.75px;
-  border: 0.05rem solid #bbb2c2;
-  border-radius: 0.25rem;
-  margin: 1rem auto 1rem;
-  margin-left: 2rem;
+   font-family: "Belleza", sans-serif;
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5;
+   color: #bbb2c2;
+   text-align: left;
+   background-color: #4e3e5c;
+   width: 70%;
+   padding: 1rem;
+   padding-bottom: 0.75px;
+   border: 0.05rem solid #bbb2c2;
+   border-radius: 0.25rem;
+   margin: 1rem auto 1rem;
+   margin-left: 2rem;
 }
-

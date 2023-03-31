@@ -31,6 +31,7 @@
 #Media queries
 ==============================================================
 */
+
 @media screen and (max-width: 1024px) {
    /* GLOBAL STYLES */
    header {
@@ -105,7 +106,6 @@
 
    /* CAREER */
 
-
    /* PUBLICATIONS */
    .articles p {
       text-align: justify;
@@ -117,10 +117,18 @@
    }
 
    /* EDUCATION */
-
+   .slideInformal img {
+      cursor: default;
+      transition: 0s scale;
+   }
+   .slideInformal img:hover{      
+      scale:1;
+   }
+   map {
+      display: none;
+   }
 
    /* SKILLS */
-
 
    /* ABOUT */
    .profile-section {
@@ -147,6 +155,18 @@
 }
 
 /* ============================================================== */
+@media screen and (max-width: 903px){
+/* EDUCATION */
+.education-flex h2{
+   font-size: 1rem;
+}
+.top-awards-flex,
+   .bottom-awards-flex {
+      font-size: 1.25rem;
+      width: 100%;
+}
+}
+/* ============================================================== */
 @media screen and (max-width: 768px) {
    /* GLOBAL STYLES */
    body {
@@ -162,7 +182,9 @@
       font-size: 1rem;
    }
    h3,
-   h4, p, li{
+   h4,
+   p,
+   li {
       font-size: 0.85rem;
    }
    .contents {
@@ -252,10 +274,9 @@
    }
 
    /* EDUCATION */
-
+   
 
    /* SKILLS */
-
 
    /* ABOUT */
    .left-flex-about {
@@ -351,7 +372,6 @@
 
    /* === CAREER === */
 
-
    /* === PUBLICATIONS === */
    .articles h2 {
       margin: 0.75rem 0;
@@ -365,10 +385,39 @@
    }
 
    /* === EDUCATION === */
-
-
+   .education-flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+   }
+   .education-flex h2 {
+      font-size: 1.25rem;
+      margin-top: 2rem;
+   }
+   .slider {
+      height: 20rem;
+      width: 20rem;
+   }
+   .awards p {
+      text-transform: none;
+      text-align: left;
+      margin-bottom: 0.5rem;
+   }
+   .awards-flex{
+      width: 70%;
+      margin:auto
+   }
+   .top-awards-flex,
+   .bottom-awards-flex {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.25rem;
+      width: 60%;
+      margin-bottom: 0rem;
+      margin: AUTO;
+   }
+   
    /* === SKILLS === */
-
 
    /* === ABOUT === */
    .profile-section {
@@ -395,7 +444,7 @@
       padding: 0.5rem 0;
       margin: 0.5rem 0;
    }
-   
+
    /* Contact form */
    .fcf-body {
       font-size: 0.85rem;
@@ -423,28 +472,20 @@
 /* ============================================================== */
 @media screen and (max-width: 518px) {
    /* === CAREER === */
-   .label h1{
+   .label h1 {
       font-size: 1.5rem;
    }
-   .label h4{
+   .label h4 {
       font-size: 1rem;
    }
 
    /* === EDUCATION === */
+   .slider {
+      height: 18rem;
+      width: 18rem;
+   }
    /* Awards */
-   .awards h3 {
-      text-transform: none;
-      text-align: left;
-      margin-bottom: 0.5rem;
-   }
-   .top-awards-flex,
-   .bottom-awards-flex {
-      display: flex;
-      flex-direction: column;
-      width: 60%;
-      margin-bottom: 0rem;
-      margin: AUTO;
-   }
+  
 
    /* === ABOUT === */
    /* Info */
