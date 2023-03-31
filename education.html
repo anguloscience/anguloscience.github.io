@@ -9,7 +9,9 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1, " />
       <meta name="keywords" content="HTML, CSS, JavaScript" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="Education" content="Formal and informal training" />
+      <meta
+         name="Education"
+         content="Formal and informal training. Awards and scholarships" />
       <link rel="stylesheet" href="Styles/style.css" />
       <link rel="stylesheet" href="Styles/contents.css" />
       <link rel="stylesheet" href="Styles/responsive.css" />
@@ -70,8 +72,50 @@
 
       <!-- Page contents -->
       <main class="contents">
-         <button class="accordion">Section 1</button>
-         <div class="awards">
+         <!-- slider container -->
+         <div class="slider">
+            <!-- slide 1 -->
+            <div class="slide">
+               <img
+                  src="https://source.unsplash.com/random?landscape,mountain"
+                  alt="" 
+                  height="100%"/>
+            </div>
+
+            <!-- slide 2 -->
+            <div class="slide">
+               <img
+                  src="https://source.unsplash.com/random?landscape,cars"
+                  alt="" 
+                  height="100%"/>
+            </div>
+
+            <!-- slide 3 -->
+            <div class="slide">
+               <img
+                  src="https://source.unsplash.com/random?landscape,night"
+                  alt="" 
+                  height="100%"/>
+            </div>
+
+            <!-- slide 4 -->
+            <div class="slide">
+               <img
+                  src="https://source.unsplash.com/random?landscape,city"
+                  alt="" 
+                  height="100%"/>
+            </div>
+
+            <!-- Control buttons -->
+            <button class="formal-btn btn-next">
+               <img src="Images/icons/right-arrow.svg" />
+            </button>
+            <button class="formal-btn btn-prev">
+               <img src="Images/icons/right-arrow.svg" />
+            </button>
+         </div>
+
+         <!-- <div class="awards">
             <h2>Awards and Scholarships</h2>
             <div class="awards-flex">
                <section class="top-awards-flex">
@@ -118,11 +162,12 @@
                   </article>
                </section>
             </div>
-         </div>
+         </div> -->
       </main>
       <footer>
          <p>© Mónica Angulo. All rights reserved</p>
       </footer>
    </body>
    <script src="Scripts/responsive.js"></script>
+   <script src="Scripts/carousel.js"></script>
 </html>
