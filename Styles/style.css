@@ -121,6 +121,7 @@ h2 {
    color:  #bbb2c2;
 }
 h3 {
+   font-family: 'Belleza';
    color: #DCB82C;
    font-size: 1.2rem;
    text-transform: uppercase;
@@ -160,7 +161,7 @@ p {
    text-align: right;
    outline: none;
    margin: 0 1.5rem;
-   font: 400 1rem "Tenor-sans", sans-serif;
+   font: 400 1.25rem "Tenor-sans", sans-serif;
    color: #bbb2c2;
    text-transform: uppercase;
    transition: color 400ms ease-in-out;

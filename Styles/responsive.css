@@ -54,9 +54,9 @@
    .menu nav {
       top: 1.2rem;
    }
-   .menu nav a {
+   .nav-list a {
       background-color: #3f314b;
-      padding: 0.75rem 0;
+      padding: 0.5rem 0;
       font-size: 1rem;
    }
    .contents {
@@ -121,8 +121,8 @@
       cursor: default;
       transition: 0s scale;
    }
-   .slideInformal img:hover{      
-      scale:1;
+   .slideInformal img:hover {
+      scale: 1;
    }
    map {
       display: none;
@@ -155,16 +155,17 @@
 }
 
 /* ============================================================== */
-@media screen and (max-width: 903px){
-/* EDUCATION */
-.education-flex h2{
-   font-size: 1rem;
-}
-.top-awards-flex,
+@media screen and (max-width: 903px) {
+   
+   /* EDUCATION */
+   .education-flex h2 {
+      font-size: 1rem;
+   }
+   .top-awards-flex,
    .bottom-awards-flex {
       font-size: 1.25rem;
       width: 100%;
-}
+   }
 }
 /* ============================================================== */
 @media screen and (max-width: 768px) {
@@ -228,12 +229,7 @@
       margin: 1rem 1rem;
       font-size: 2rem;
    }
-   .nav-list li a {
-      text-align: right;
-      font-size: 1.2rem;
-      transition: color 0.4s ease-in-out;
-   }
-   .nav-list li a:hover {
+      .nav-list li a:hover {
       color: #edbe00;
    }
    .hamburger {
@@ -273,12 +269,23 @@
       margin: 3rem auto 1rem;
    }
 
-   /* EDUCATION */
-   
+   /* === CAREER === */
 
-   /* SKILLS */
+   /* === PUBLICATIONS === */
+   .aside-art {
+      display: none;
+   }
+   .articles p {
+      font-family: "Calibri";
+      text-align: justify;
+      margin: 0.5rem 0;
+   }
 
-   /* ABOUT */
+   /* === EDUCATION === */
+
+   /* === SKILLS === */
+
+   /* === ABOUT === */
    .left-flex-about {
       display: flex;
       flex-direction: column;
@@ -374,14 +381,14 @@
 
    /* === PUBLICATIONS === */
    .articles h2 {
-      margin: 0.75rem 0;
+      margin: 0.9rem 0;
+      text-transform: none;
+      font-size: 1.15rem;
    }
    .articles p {
+      font-family: "Calibri";
       text-align: justify;
       margin: 0.5rem 0;
-   }
-   .aside-art img {
-      padding: 0.25rem;
    }
 
    /* === EDUCATION === */
@@ -403,9 +410,9 @@
       text-align: left;
       margin-bottom: 0.5rem;
    }
-   .awards-flex{
-      width: 70%;
-      margin:auto
+   .awards-flex {
+      width: 100%;
+      margin: auto;
    }
    .top-awards-flex,
    .bottom-awards-flex {
@@ -416,7 +423,7 @@
       margin-bottom: 0rem;
       margin: AUTO;
    }
-   
+
    /* === SKILLS === */
 
    /* === ABOUT === */
@@ -476,7 +483,11 @@
       font-size: 1.5rem;
    }
    .label h4 {
-      font-size: 1rem;
+      font-size: 1.1rem;
+   }
+   .content p,
+   .content li {
+      font: 1rem "calibri";
    }
 
    /* === EDUCATION === */
@@ -485,7 +496,22 @@
       width: 18rem;
    }
    /* Awards */
-  
+   .top-awards-flex,
+   .bottom-awards-flex {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.25rem;
+      width: 100%;
+      margin-bottom: 0rem;
+      margin: AUTO;
+   }
+   .top-awards-flex p,
+   .bottom-awards-flex p {
+      padding-left: 2rem;
+   }
+   .awards-info hr {
+      margin: 0.5rem 2rem;
+   }
 
    /* === ABOUT === */
    /* Info */
@@ -496,11 +522,12 @@
    .left-flex-about {
       display: flexbox;
       flex-direction: column;
-      width: 55%;
+      width: 75%;
       text-align: left;
       margin: 0 auto;
    }
    .info p {
+      font-size: 1.2rem;
       display: inline-block;
       text-align: left;
       align-items: center;
@@ -515,6 +542,7 @@
       margin-left: 0.5rem;
    }
    .info-links p {
+      font-size: 1.2rem;
       margin: 0.5rem 0.75rem 0.5rem 0;
       padding: 0 0.5rem;
       border-bottom: none;
@@ -524,7 +552,7 @@
       margin: 1rem;
    }
    .icons-flex {
-      font-size: 120%;
+      font-size: 130%;
       width: 100%;
       justify-content: space-evenly;
    }
@@ -544,4 +572,15 @@
    .contents-footer {
       display: none;
    }
+}
+
+/* ============================================================== */
+@media screen and (max-height: 394px) {
+.nav-list a {
+   display: block;
+   padding: 0.5rem 0;
+   text-align: left;
+   outline: none;
+   margin: 0 1.5rem;
+}
 }

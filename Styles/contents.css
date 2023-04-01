@@ -168,6 +168,12 @@ h4 {
 .articles .keywords {
    text-align: center;
 }
+.articles hr{
+   border-color: #b5abbe;
+   opacity: 0.3;
+   width: auto;
+   margin: 0.5rem;
+}
 
 /*
 ==============================================================
