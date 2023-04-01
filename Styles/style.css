@@ -383,18 +383,7 @@ label.fcf-label {
    display: inline-block;
    margin-bottom: 0.5rem;
 }
-.fcf-credit {
-   font-size: 0.75rem;
-   color: #868b90;
-}
-.fcf-credit a {
-   color: #868b90;
-   text-decoration: underline;
-}
-.fcf-credit a:hover {
-   color: #261634;
-   text-decoration: underline;
-}
+
 .fcf-btn {
    display: inline-block;
    font-weight: 400;

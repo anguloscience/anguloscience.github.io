@@ -179,13 +179,13 @@
       text-align: center;
    }
    h2 {
-      font-size: 1rem;
+      font-size: 1.2rem;
    }
    h3,
    h4,
    p,
    li {
-      font-size: 0.85rem;
+      font-size: 1rem;
    }
    .contents {
       margin-left: 1rem;
@@ -300,13 +300,13 @@
 @media screen and (max-width: 622px) {
    /* === GLOBAL CONTENTS ===*/
    h2 {
-      font-size: 1rem;
+      font-size: 1.2rem;
    }
    h3 {
-      font-size: 0.85rem;
+      font-size: 1rem;
    }
    p {
-      font-size: 0.85rem;
+      font-size: 1rem;
    }
    .menu {
       background: none;
@@ -447,7 +447,7 @@
 
    /* Contact form */
    .fcf-body {
-      font-size: 0.85rem;
+      font-size: 1rem;
       text-align: left;
       width: 75%;
       padding: 0.5rem;
@@ -456,7 +456,7 @@
    }
    .fcf-btn-lg,
    .fcf-btn-group-lg > .fcf-btn {
-      font-size: 0.85rem;
+      font-size: 1rem;
       line-height: 1.5;
       border-radius: 0.3rem;
       padding: 0.5rem 0.5rem;
