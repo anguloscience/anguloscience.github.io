@@ -85,6 +85,7 @@ main {
    text-align: left;
 }
 .content li {
+   font-size: 1.15rem;
    text-align: left;
    list-style-type: disc;
    margin-left: 1rem;
@@ -168,7 +169,7 @@ h4 {
 .articles .keywords {
    text-align: center;
 }
-.articles hr{
+.articles hr {
    border-color: #b5abbe;
    opacity: 0.3;
    width: auto;
@@ -303,8 +304,77 @@ h4 {
  #Skills
 ==============================================================
 */
-
-
+/* Progress bars  */
+.skills-flex {
+   display: flex;
+   flex-direction: column;
+}
+.skills-flex .section-flex {
+   width: auto;
+   justify-content: space-evenly;
+   margin: 0.5rem 1rem;
+}
+.skill-info {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0.5rem 0rem;
+}
+.left {
+   width: 20%;
+}
+.skill-info h3,
+.skill-info p {
+   margin: 0.25rem;
+}
+.progress-bar {
+   width: 10rem;
+   height: 1rem;
+   border-radius: 1rem;
+   border: 1px solid #89709b;
+   margin: 0.5rem;
+}
+.skills hr {
+   border-color: #b5abbe;
+   opacity: 0.3;
+   width: auto;
+   margin: 1rem 5rem;
+}
+/* Knowledge */
+.knowledge{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   width: auto;
+}
+.knowledge li{
+   text-align: left;
+   list-style-image: url(Images/checkmark-16.png);
+   font-size: 1.1rem ;
+   color: #bbb2c2;   
+   padding: 0.5rem 0.5rem 0 0.5rem;
+}
+.skills h2{
+   margin: 1.5rem 1rem 0.5rem;
+   font-weight: 500;
+}
+.languages h2{
+   margin-top: 1.25rem;
+   padding: 0;
+}
+.languages p{
+   text-align: left;
+   margin-left: 5rem;
+}
+.languages a{
+   text-decoration: 0.05px underline;
+   color:#bbb2c2;
+   transition: 0.2s color ease-in;
+}
+.languages a:hover{
+   
+   color:#edbe00;
+}
 
 /*
 ==============================================================
