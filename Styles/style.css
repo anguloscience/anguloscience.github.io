@@ -69,7 +69,7 @@ a {
 a:hover {
    color: #bbb2c2;
 }
-.counter-index{
+.counter-index {
    display: none;
 }
 
@@ -85,6 +85,12 @@ header {
    margin-left: 14rem;
    padding: 0.25rem 0;
 }
+.head-block {
+   font: 500 2rem "Tenor Sans", sans-serif;
+   color: #edbe00;
+   text-align: center;
+   text-transform: uppercase;
+}
 header p {
    font: 400 1.25rem "Tenor Sans", sans-serif;
    color: #b6b0c2;
@@ -95,7 +101,7 @@ footer {
    align-items: center;
    margin-top: 0;
    padding-top: 0;
-   }
+}
 footer p {
    font-size: 0.75rem;
    display: inline-block;
@@ -118,17 +124,17 @@ h1 {
 h2 {
    font: 400 1.6rem "tenor sans", sans-serif;
    text-transform: uppercase;
-   color:  #bbb2c2;
+   color: #bbb2c2;
 }
 h3 {
-   font-family: 'Belleza';
-   color: #DCB82C;
+   font-family: "Belleza";
+   color: #dcb82c;
    font-size: 1.25rem;
    text-transform: uppercase;
    font-weight: 300;
 }
-h4{
-   color:#DCB82C;
+h4 {
+   color: #dcb82c;
    font-size: 1.15rem;
    font-weight: 350;
 }
@@ -185,7 +191,7 @@ p {
    color: #f8f8f8;
 }
 .bottom-nav {
-  height: 65%; 
+   height: 65%;
    display: flex;
    flex-direction: column;
    justify-content: flex-end;
@@ -206,16 +212,16 @@ p {
 /* Home page */
 section h2 {
    margin-bottom: 1rem;
-   padding-left: 1rem;
+   padding-left: 0rem;
    padding-right: 2rem;
    text-overflow: ellipsis;
+   padding-left: 1rem;
 }
 .gif {
    display: contents;
 }
 .gif video {
    margin-left: 16rem;
-   margin-right: 1rem;
 }
 .section-flex {
    display: flex;
@@ -245,13 +251,13 @@ section h2 {
    padding: 0.5rem;
 }
 .left-flex {
-   width: 60%;
+   width: 70%;
    margin-left: 16rem;
    margin-right: 0.75rem;
    text-align: left;
 }
 .right-flex {
-   width: 40%;
+   width: 30%;
    margin-right: 1.5rem;
 }
 .right-flex img {
@@ -272,7 +278,7 @@ section h2 {
 }
 .publications {
    margin-left: 16rem;
-   margin-right: 2rem;
+   margin-right: 1rem;
 }
 .publications h2 {
    display: block;
@@ -312,7 +318,7 @@ section h2 {
    margin-top: 0;
    padding-top: 0;
 }
-.visit-counter{
+.visit-counter {
    display: none;
 }
 
@@ -337,7 +343,7 @@ section h2 {
    margin: 3rem auto 1rem;
    margin-left: 16rem;
 }
-.fcf-h3{
+.fcf-h3 {
    text-align: center;
 }
 .fcf-form-group {
@@ -451,6 +457,3 @@ input[type="reset"].fcf-btn-block,
 input[type="button"].fcf-btn-block {
    width: 100%;
 }
-
-
-

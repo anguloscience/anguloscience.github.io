@@ -61,6 +61,9 @@
    .contents {
       margin-left: 12rem;
    }
+   .top-nav img:hover {
+      scale: 1;
+   }
    footer {
       align-items: center;
       margin-top: 0;
@@ -92,6 +95,10 @@
    .publications {
       margin-left: 13rem;
    }
+
+   h2 {
+      margin-left: 1rem;
+   }
    .right-flex-intro {
       padding-top: 1rem;
    }
@@ -102,7 +109,15 @@
    .publications {
       margin-right: 0rem;
    }
-
+   .left-flex h2 {
+      padding: 0;
+   }
+   .img-zoom img {
+      transition: none;
+   }
+   .img-zoom img:hover {
+      scale: 1;
+   }
    /* CAREER */
 
    /* PUBLICATIONS */
@@ -113,6 +128,12 @@
    .aside-art {
       margin-top: 0.5rem;
       padding: 0.25rem;
+   }
+   .aside-art img {
+      transition: none;
+   }
+   .aside-art img:hover {
+      scale: 1;
    }
 
    /* EDUCATION */
@@ -174,6 +195,11 @@
    }
    header h1 {
       font: 400 2rem "Tenor Sans", sans-serif;
+      color: #edbe00;
+      text-align: center;
+   }
+   .head-block {
+      font: 400 1.5rem "Tenor Sans", sans-serif;
       color: #edbe00;
       text-align: center;
    }
@@ -263,6 +289,7 @@
    .publications {
       margin: 0.25rem 2rem;
    }
+
    .fcf-body-index {
       margin: 3rem auto 1rem;
    }
@@ -281,6 +308,14 @@
    /* === EDUCATION === */
 
    /* === SKILLS === */
+
+   /* === PORTFOLIO === */
+   .apps-flex{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-left: 0;
+   }
 
    /* === ABOUT === */
    .left-flex-about {
@@ -338,8 +373,11 @@
       padding: 0 0 1rem 0;
    }
    .gif video {
-      margin: 0 0 0 0.5rem;
-      width: 35%;
+      margin: auto;
+      width: 40%;
+   }
+   .right-flex-intro {
+      padding: 0;
    }
    .intro a {
       display: inline-block;
@@ -351,27 +389,43 @@
    .intro p,
    .intro h2 {
       padding: 0;
-      margin: 0 0 1rem 0;
+      margin-bottom: 0.5rem;
    }
-   .left-flex-intro {
-      width: 30%;
+   .index-main .section-flex {
+      flex-direction: column;
    }
+   .left-flex-intro,
    .right-flex-intro {
-      width: 70%;
+      text-align: justify;
+      width: 80%;
+   }
+   .right-flex-intro h2 {
+      text-align: left;
+   }
+   .gif img {
+      display: contents;
+   }
+   .gif {
+      display: flex;
    }
    .left-flex {
       display: block;
-      width: 100%;
-      margin: 0 0 0 0.5rem;
+      width: 80%;
+      margin: 0.5rem;
+      text-align: justify;
    }
+
+   .about-me-home {
+      margin-right: 1rem;
+   }
+
    .right-flex {
-      padding: 0;
-      width: 0;
-      height: 0;
+      display: none;
    }
-   .right-flex img {
-      padding: 0;
-      width: 0;
+
+   .ctu-button {
+      float: right;
+      margin: 0.5rem;
    }
 
    /* === CAREER === */

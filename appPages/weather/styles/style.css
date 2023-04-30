@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css2?family=Belleza&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap);
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css);
+:root {
+  --dark-purple: #3f314b;
+  --purple: #4e3e5c;
+  --lila: #bbb2c2;
+  --lilgray: #776f7e;
+  --yellow: #f5eabe;
+}
+
+body {
+  margin: 2rem;
+  background-color: #3f314b;
+  color: var(--lila);
+  font-family: "Tenor Sans";
+}
+
+.container {
+  background-color: var(--dark-purple);
+  box-shadow: 0 0 0.5rem var(--lila);
+  border-radius: 0.75rem;
+  max-width: 80%;
+  min-width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  padding: 1rem;
+}
+.container h1 {
+  font-size: 3rem;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+form .city-input {
+  color: var(--lila);
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  text-align: start;
+  border: none;
+  background-color: var(--purple);
+  outline: none;
+}
+form .city-input::-moz-placeholder {
+  color: var(--lila);
+  font: 1.5rem "Belleza";
+}
+form .city-input::placeholder {
+  color: var(--lila);
+  font: 1.5rem "Belleza";
+}
+form .submit-button {
+  font-family: "Belleza";
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: var(--lila);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--dark-purple);
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+form .submit-button:hover {
+  background-color: var(--yellow);
+}
+
+section .icon img {
+  display: block;
+  margin: auto;
+  width: 5rem;
+  background-color: var(--lilgray);
+  border-radius: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section .temperature {
+  font: bold 4rem "Belleza";
+  margin: 2rem;
+}
+section .description {
+  font: 2rem "Belleza";
+  text-transform: capitalize;
+}
+section .details {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  text-align: center;
+  gap: 2rem;
+  margin: 3rem 1rem;
+}
+section .details div {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--dark-purple);
+  background-color: var(--lila);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.5rem;
+}/*# sourceMappingURL=style.css.map */

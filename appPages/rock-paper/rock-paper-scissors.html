@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Rock Paper Scissors Lizard Spock</title>
+      <link rel="stylesheet" href="./styles/rock-paper.css" />
+      <meta name="author" content="Mónica Angulo B. PhD." />
+      <meta name="difficulty" content="Intermediate" />
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   </head>
+   <body>
+      <p class="title">Rock • Paper • Scissors • Lizard • Spock</p>
+      <section>
+         <button class="js-rock-button">
+            <img src="./images/Rock.png" alt="" />
+         </button>
+
+         <button class="js-paper-button">
+            <img src="./images/Paper.png" alt="" />
+         </button>
+
+         <button class="js-scissors-button">
+            <img src="./images/Scissors.png" alt="" />
+         </button>
+
+         <button class="js-lizard-button">
+            <img src="./images/Lizard.png" alt="" />
+         </button>
+
+         <button class="js-spock-button">
+            <img src="./images/Spock.png" alt="" />
+         </button>
+      </section>
+
+      <p class="js-result result"></p>
+      <p class="js-moves moves"></p>
+      <p class="js-score score"></p>
+
+      <div class="below-buttons">
+         <button
+            class="reset"
+            onclick="
+         score.wins = 0;
+         score.losses = 0;
+         score.ties = 0;
+         localStorage.removeItem('score');
+         updateScoreElement();
+         //alert('Score has been reset');
+      ">
+            Reset score
+         </button>
+         <button
+            class="reset js-autoplay-button"
+            onclick="autoPlay(), stopAutoPlay()">
+            Auto play
+         </button>
+      </div>
+      <div>
+         <h3>Project description</h3>
+         <p>
+            In this project, I designed and developed an exciting and
+            interactive rock, paper, scissors, lizard, and Spock game
+            (as seen on
+            <a
+               href="https://www.youtube.com/watch?v=x5Q6-wMx-K8&ab_channel=Wozamil"
+               target="_blank"
+               >The Big Bang Theory</a
+            >
+            TV show) that challenges players to test their luck and
+            strategy against a computer opponent. Using HTML for
+            structure, CSS for a modern look, and JavaScript to
+            generate the computer's choice and compare the results, I
+            created a seamless and engaging user experience. Players
+            can win, lose, or tie, and scores are tracked at the bottom
+            to keep track of progress. With a keen eye for design and a
+            passion for interactive experiences, I created a fun and
+            engaging game that is sure to keep players coming back for
+            more..
+         </p>
+      </div>
+
+      <script src="./scripts/rock-paper.js"></script>
+   </body>
+</html>

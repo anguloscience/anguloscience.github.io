@@ -10,6 +10,7 @@
  *         #Publications
  *         #Education
  *         #Skills
+ *         #Portfolio
  *         #About
  * ----------------------------------
 */
@@ -341,40 +342,69 @@ h4 {
    margin: 1rem 5rem;
 }
 /* Knowledge */
-.knowledge{
+.knowledge {
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
    width: auto;
 }
-.knowledge li{
+.knowledge li {
    text-align: left;
    list-style-image: url(Images/checkmark-16.png);
-   font-size: 1.1rem ;
-   color: #bbb2c2;   
+   font-size: 1.1rem;
+   color: #bbb2c2;
    padding: 0.5rem 0.5rem 0 0.5rem;
 }
-.skills h2{
+.skills h2 {
    margin: 1.5rem 1rem 0.5rem;
    font-weight: 500;
 }
-.languages h2{
+.languages h2 {
    margin-top: 1.25rem;
    padding: 0;
 }
-.languages p{
+.languages p {
    text-align: left;
    margin-left: 5rem;
 }
-.languages a{
+.languages a {
    text-decoration: 0.05px underline;
-   color:#bbb2c2;
+   color: #bbb2c2;
    transition: 0.2s color ease-in;
 }
-.languages a:hover{
-   
-   color:#edbe00;
+.languages a:hover {
+   color: #edbe00;
 }
+
+
+/*
+==============================================================
+ #Portfolio
+==============================================================
+*/
+.apps-flex{
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+.apps-flex h2{
+   margin-top: 2rem;
+}
+
+.apps-list{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.app-list img{
+   max-width: 5rem;
+   min-width: 5rem;
+   height: auto;
+}
+
+
+
 
 /*
 ==============================================================
