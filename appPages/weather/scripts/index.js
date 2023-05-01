@@ -1,4 +1,4 @@
-const apiKey =  ${{ secrets.weather_api_key}};
+const apiKey =  "0c9125ae479be95dda29f10ee7aee951";
 
 const weatherDataElement = document.getElementById("weather-data");
 
