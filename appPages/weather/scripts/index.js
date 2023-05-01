@@ -1,4 +1,4 @@
-"WEATHER_API_KEY"
+WEATHER_API_KEY
 
 const weatherDataElement = document.getElementById("weather-data");
 
