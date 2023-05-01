@@ -3,15 +3,6 @@ let score = JSON.parse(localStorage.getItem("score")) || {
    losses: 0,
    ties: 0,
 };
-/* Este if hace lo mismo que el || {} de arriba
-if (!score){
-  score = {
-     wins: 0,
-     losses: 0,
-     ties: 0
-  }
-}
-*/
 
 let isAutoPlaying = false;
 let intervalId;
@@ -156,11 +147,6 @@ function playGame(playerMove) {
    document.querySelector(
       ".js-moves"
    ).innerHTML = `You <img src="images/${playerMove}.png" class="move-icon" alt="">VS.<img src="images/${computerMove}.png" class="move-icon" alt=""> Computer`;
-
-   /*alert(
-     `You picked ${playerMove}. Computer picked ${computerMove}. ${result}
-    Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`
-  );*/
 }
 
 function updateScoreElement() {
