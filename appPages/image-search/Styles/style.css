@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css2?family=Belleza&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap);
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css);
+:root {
+  --dark-purple: #3f314b;
+  --purple: #4e3e5c;
+  --lila: #bbb2c2;
+  --lilgray: #776f7e;
+  --yellow: #f5eabe;
+}
+
+body {
+  margin: 2rem;
+  background-color: #3f314b;
+  color: var(--lila);
+  font-family: "Tenor Sans";
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--lila);
+  transition: color 400ms ease-in-out;
+}
+
+a:hover {
+  color: var(--yellow);
+}
+
+form {
+  margin: 2rem;
+}
+form input {
+  border: none;
+  background-color: var(--dark-purple);
+  box-shadow: 0 0 5px var(--lila);
+  border-radius: 5px;
+  outline: none;
+  padding: 0.5rem;
+  color: var(--lila);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+form input::-moz-placeholder {
+  color: var(--lila);
+  font-size: 1.2rem;
+  font-family: "Belleza";
+}
+form input::placeholder {
+  color: var(--lila);
+  font-size: 1.2rem;
+  font-family: "Belleza";
+}
+form button {
+  padding: 0.75rem 1.5rem;
+  font-family: "Belleza";
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: var(--lila);
+  border: none;
+  border-radius: 5px;
+  color: var(--dark-purple);
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+form button:hover {
+  background-color: var(--yellow);
+}
+
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0.75rem;
+}
+.search-results .result {
+  margin-bottom: 3rem;
+  width: 30%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--lila, 0.2);
+  overflow: hidden;
+}
+.search-results .result img {
+  width: 100%;
+  height: 12rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 400ms ease-in-out;
+}
+.search-results .result img:hover {
+  transform: scale(1.05);
+}
+.search-results .result a {
+  display: block;
+  padding: 0.55rem;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+#show-more-button {
+  display: block;
+  background-color: var(--dark-purple);
+  color: var(--lila);
+  font-family: "Belleza";
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: 0.5rem 1.5rem;
+  margin: 1rem auto;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+  display: none;
+}
+#show-more-button:hover {
+  background-color: var(--purple);
+}
+
+/* $layout-tablet: 768px;
+
+@media screen and (max-width: $layout-tablet){
+  .search-results{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .result {
+
+    width: 45%;
+  }
+}
+*//*# sourceMappingURL=style.css.map */

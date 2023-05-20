@@ -1,9 +1,9 @@
+// this API key is publicly available and free in the website
+
 const apiKey =  "0c9125ae479be95dda29f10ee7aee951";
 
 const weatherDataElement = document.getElementById("weather-data");
-
 const cityInputElement = document.getElementById("city-input");
-
 const formElement = document.querySelector("form");
 
 formElement.addEventListener("submit", (event) => {
@@ -52,18 +52,13 @@ async function getWeatherData(cityValue) {
       weatherDataElement.querySelector(".js-details").innerHTML = details
          .map((detail) => `<div>${detail}</div>`)
          .join("");
-
    } catch (error) {
-    weatherDataElement.querySelector(".js-icon").innerHTML = ""
-      weatherDataElement.querySelector(
-         ".js-temperature"
-      ).textContent = "";
+      weatherDataElement.querySelector(".js-icon").innerHTML = "";
+      weatherDataElement.querySelector(".js-temperature").textContent = "";
 
-      weatherDataElement.querySelector(
-         ".js-description"
-      ).textContent = "An error ocurred. Please check the name of the city and try again :)";
+      weatherDataElement.querySelector(".js-description").textContent =
+         "An error ocurred. Please check the name of the city and try again :)";
 
-      weatherDataElement.querySelector(".js-details").innerHTML = ""
-
+      weatherDataElement.querySelector(".js-details").innerHTML = "";
    }
 }

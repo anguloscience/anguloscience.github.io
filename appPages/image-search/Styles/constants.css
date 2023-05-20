@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css2?family=Belleza&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap);
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css);
+
+:root {
+   --dark-purple: #3f314b;
+   --purple: #4e3e5c;
+   --lila: #bbb2c2;
+   --lilgray: #776f7e;
+   --yellow: #f5eabe;
+}
+
+body {
+   margin: 2rem;
+   background-color: #3f314b;
+   color: var(--lila);
+   font-family: "Tenor Sans";
+   text-align: center;
+}
+
+h1 {
+   font-size: 3rem;
+   margin-bottom: 5rem;
+}
+
+a {
+   text-decoration: none;
+   color: var(--lila);
+   transition: color 400ms ease-in-out;
+}
+a:hover {
+   color: var(--yellow);
+}
+
+
