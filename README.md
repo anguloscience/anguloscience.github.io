@@ -1,5 +1,6 @@
-# Website
-Personal website with resume 
+# Professional Website
+Personal website with resume.
+Lifelong learner who built this portfolio website from scratch using HTML, CSS, and JavaScript — because when I want to understand something, I build it.
 
 
 
